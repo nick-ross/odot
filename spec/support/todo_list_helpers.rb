@@ -6,5 +6,4 @@ module TodoListHelpers
 			click_link "List Items"
 		end
 	end
-
 end
