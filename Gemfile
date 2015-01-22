@@ -37,6 +37,8 @@ group :test do
 	gem 'capybara-email'
 	gem 'shoulda-matchers', '~> 2.6.2'
 end
+
+gem 'foundation-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
