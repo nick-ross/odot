@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get "/login" => "user_sessions#new", as: :login
   get "/logout" => "user_sessions#destroy", as: :logout
+  # added get path to address routing issue
+  get "/todo_lists/:todo_list_id/todo_items/:id/complete" => "todo_items#complete", as: :complete_todo_list_todo_item
 
   resources :users
   resources :user_sessions, only: [:new, :create]
